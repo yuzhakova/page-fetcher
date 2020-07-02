@@ -9,7 +9,7 @@ const fetchAndSave = function(url, localPath) {
    console.log('Failed to download resource: ', error);
    return;
   }
-  // Optional: it's okay if students don't bother checking the http response code for this exercise. 
+
   fs.writeFile(localPath, body, (error) => {
    if (error) {
     console.log('Failed to write to localPath: ', localPath);
